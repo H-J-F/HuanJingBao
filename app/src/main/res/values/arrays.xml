@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>A座宿舍</item>
+        <item>B座宿舍</item>
+        <item>C座宿舍</item>
+        <item>D座宿舍</item>
+        <item>E座宿舍</item>
+        <item>F座宿舍</item>
+        <item>G座宿舍</item>
+        <item>I座宿舍</item>
+        <item>J座宿舍</item>
+        <item>Y座宿舍</item>
+        <item>C座教学楼</item>
+        <item>D座教学楼</item>
+        <item>E座教学楼</item>
+        <item>G座教学楼</item>
+    </string-array>
+</resources>

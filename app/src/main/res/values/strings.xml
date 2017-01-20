@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">汕大环境宝</string>
+    <string name="login_btn_string">Login</string>
+    <string name="pwd_string">密码：</string>
+    <string name="usr_string">账号：</string>
+    <string name="password_hint_string">输入密码</string>
+    <string name="collect">收藏</string>
+    <string name="update_data">更新数据</string>
+</resources>

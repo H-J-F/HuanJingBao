@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/main_activity_bg">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        app:title="汕大环境宝"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@android:drawable/ic_menu_sort_by_size" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:id="@+id/main_top_layout">
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/toward"
+            android:scaleType="fitCenter"
+            android:src="@drawable/toward"
+            android:background="@color/imagebtn_bg"
+            android:layout_marginLeft="60dp" />
+
+        <TextView
+            android:text="地点"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/place"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/next"
+            android:src="@drawable/next"
+            android:scaleType="fitCenter"
+            android:background="@color/imagebtn_bg"
+            android:layout_marginRight="60dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_layout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:id="@+id/tem_layout">
+
+            <TextView
+                android:text="24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tem"
+                android:textSize="180sp"
+                android:includeFontPadding="false"
+                android:gravity="top|right|center_horizontal"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="℃"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tem_duC"
+                android:textSize="60sp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical" />
+        </LinearLayout>
+
+        <TextView
+            android:text="11月21日 星期一"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:textSize="18sp"
+            android:paddingLeft="15dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:id="@+id/update_layout">
+
+            <TextView
+                android:text="已更新：11-21 2:05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_time"
+                android:paddingRight="20dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/button"
+                android:background="@drawable/update"
+                android:layout_marginRight="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical|fill_vertical|fill_horizontal"
+            android:layout_gravity="fill_vertical|fill_horizontal"
+            android:paddingRight="20dp"
+            android:id="@+id/data_layout"
+            android:layout_marginBottom="40dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/data_layout_bg"
+                android:layout_marginLeft="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:text="甲醛"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/jiaquan"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:layout_marginBottom="20dp" />
+
+                <TextView
+                    android:text="0.12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/jiaquan_value"
+                    android:gravity="center"
+                    android:textSize="36sp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:text="mg/m³"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/jiaquan_unit"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:layout_marginTop="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/data_layout_bg"
+                android:layout_marginLeft="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:text="PM2.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pm25"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:layout_marginBottom="20dp" />
+
+                <TextView
+                    android:text="52"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pm25_value"
+                    android:gravity="center"
+                    android:textSize="36sp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:text="ug/m³"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pm25_unit"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:layout_marginTop="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/data_layout_bg"
+                android:layout_marginLeft="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:text="湿度"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hum"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:layout_marginBottom="20dp" />
+
+                <TextView
+                    android:text="64"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hum_value"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="36sp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:text="%RH"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hum_unit"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

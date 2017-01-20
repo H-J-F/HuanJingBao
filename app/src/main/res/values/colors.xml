@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/accent_material_dark</color>
+    <color name="colorPrimaryDark">@color/accent_material_light</color>
+    <color name="colorAccent">#e113c4d7</color>
+    <color name="white">#ffffff</color>
+    <color name="imagebtn_bg">#00ffffff</color>
+    <color name="main_activity_bg">#e1e1e1</color>
+</resources>

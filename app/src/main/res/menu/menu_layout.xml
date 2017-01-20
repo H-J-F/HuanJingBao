@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item android:id="@+id/collect"
+        android:title="@string/collect"
+        android:orderInCategory="2"
+        app:showAsAction="never"/>
+    <item android:orderInCategory="3"
+        android:id="@+id/update_data"
+        android:title="@string/update_data"
+        app:showAsAction="never"/>
+</menu>
